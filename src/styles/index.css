@@ -1,0 +1,85 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav{
+  background: black;
+}
+
+.nav > .ul{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  gap: 2.5em;
+  padding: 2.6em;
+  list-style: none;
+  width: 100%;
+}
+
+.nav .menu{
+  color: #222;
+  font-size: 2rem;
+  text-decoration: none;
+  background: lightblue;
+  padding: 0.4em;
+  border-radius: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.nav .menu:hover{
+  color: white;
+  background: gray;
+  border: 1px solid #fff;
+}
+
+.nav .mobile-icon{
+  display: none;
+  }
+  .mobile-icon:hover{
+    transition: all 2s ease;
+    transform: scale(1.2);
+    }
+  
+ h1{
+   color: green;
+   text-align: center;
+   margin-top: 5em;
+ }
+
+@media screen and (max-width: 768px){
+  
+  .nav > .ul{
+    display: grid;
+    gap: 1.5em;
+    justify-content: center;
+    justify-items: center;
+  }
+  
+  .nav .ul{
+    display: none;
+  }
+  
+  .nav .mobile-icon{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    padding-block: 0.8em ;
+  }
+  
+  .mobile-icon img{
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    width: 50px;
+    height: auto;
+  }
+  
+  .nav .mobile{
+    display: grid;
+  }
+  
+  .nav .menu{
+  padding: 0.2em;
+  font-size: 1.6rem;
+}
+}
